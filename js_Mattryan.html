@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <title>MATTRYAN</title>
+  <style>
+    body {
+      background-color: #F6F1EB;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border: 2px solid #2E5339;
+      background-color: #E8F0E8;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+.btn-primary {
+      background-color: #2E5339;
+      border: none;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: Papyrus, fantasy;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .header h1 {
+      color: #2E5339;
+      font-family: Papyrus, fantasy;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #2E5339;
+      padding: 8px 12px;
+      margin-left: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-family: Papyrus, fantasy;
+      transition: background-color 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #3c6e4f;
+    }
+
+
+    .card {
+      width: 150rem;
+      max-width: 100%;
+      height: 30rem;
+      margin: 0px auto;
+      padding: 50px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .card img {
+      border-radius: 10px;
+      width: 30%;
+      height: auto;
+      
+    }
+    .card-title {
+      color: #2E5339;
+      font-family: Papyrus, fantasy;
+      font-size: 100px;
+        margin: 0; 
+        padding:20px 0;
+        right: -20px;
+
+    }
+    .card-text {
+      color: #333;
+      font-size: 30px;
+      font-family: Papyrus, fantasy;
+        margin: -30px 0;
+        right: -20px;
+    }
+    .btn-primary {
+      background-color: #bec1cb;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin: 30px 0;
+      right: -20px;
+    }
+
+    .inside-card {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .inside-card img {
+      width: 50%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom:150px;
+      margin-left: -400px;
+    }
+
+    .inside-card-body {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .text-overlay {
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.color-block {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #e1e3e1;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.text-overlay h5,
+.text-overlay p,
+.text-overlay a {
+  position: relative;
+  z-index: 1;
+  color: #2E5339; /* White text for contrast */
+}
+
+.custom-carousel {
+  width: 80%; /* or whatever size you want */
+  max-width: 1000px;
+  height: 500px;
+  margin: 50px auto; /* center it */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.custom-carousel .carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 800px;  /* You can change this number to control max size */
+  height: auto;
+  display: block;
+  margin: 0 auto;  /* centers the image */
+  transition: transform 0.3s ease;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>MATTRYAN</h1>
+    <div class="nav-buttons">
+      <a href="http://127.0.0.1:5500/js_Mattryan.html">Home</a>
+      <a href="http://127.0.0.1:5500/js_mattryanabout.html">About</a>
+      <a href="http://127.0.0.1:5500/js_Mattryanmusic.html">Music</a>
+      <a href="http://127.0.0.1:5500/js_mattryancontact.html">Contact</a>
+    </div>
+    
+  </div>
+
+  <div class="card" >
+    <img src="IMG_1775.jpeg" class="card-img-top hero-img" alt="...">
+    <div class="card-body text-overlay">
+        <div class="color-block">
+      <h5 class="card-title">WELCOME</h5>
+      <p class="card-text">Official Mattryan website</p>
+
+      <div class="d-flex justify-content-end gap-2 mt-4" style="width: 29%;">
+        <!-- Platforms Dropdown -->
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="platformDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            PLATFORMS
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="platformDropdown">
+            <li><a class="dropdown-item" href="https://open.spotify.com/artist/7n7U1GeRnnnWRZZrfdAOFG">Spotify</a></li>
+            <li><a class="dropdown-item" href="https://www.amazon.com/music/player/artists/B0DRSXN36S/mattryan">Amazon Music</a></li>
+            <li><a class="dropdown-item" href="https://www.youtube.com/@mattryanp/featured">YouTube</a></li>
+          </ul>
+        </div>
+      
+        <!-- Socials Dropdown -->
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="socialDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            SOCIALS
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="socialDropdown">
+            <li><a class="dropdown-item" href="https://www.instagram.com/mudryan.music/">Instagram</a></li>
+            <li><a class="dropdown-item" href="https://www.tiktok.com/@mattryandoesmusic">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <!-- Inside Card-->
+  
+    
+        </div>
+        <!--end of inside card-->
+        
+      </div>
+</div>
+
+
+      <div id="carouselExample" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="DUSTY SHELF.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="3.png" class="d-block w-70 fit-img" alt="...">
+
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+            <div class="inside-card-body">
+            <h5 class="card-title">LATEST MUSIC</h5>
+            <p class="card-text">Discover the latest tracks and albums from Mattryan.</p>
+            <a href="#" class="btn btn-primary">Listen Now</a>
+            </div>
+  
+         
+            
+            <footer style="background-color: #2E5339; color: white; text-align: center; padding: 20px 0; font-family: Papyrus, fantasy; margin-top: 50px;">
+              <p style="margin: 0; font-size: 18px;">Matthew Peterson</p>
+              <p style="margin: 0; font-size: 16px;"><a href="mudryanmusic@gmail.com" style="color: #ffffff; text-decoration: underline;">mudryanmusic@gmail.com</a></p>
+
+            </footer>
+            
+</body>
+</html>
+
+
+
+
